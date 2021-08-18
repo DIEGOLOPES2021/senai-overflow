@@ -1,16 +1,13 @@
-function Page1(){
-  return <h1> Esta é a pagina 1</h1>
-}
-function Page2(){
-  return <h1> Esta é a pagina 2</h1>
-}
-function App() {
-  let currentPage = 1;
-  return (
+import { GloboStyles } from "./GloboStyles";
+import Home from "./pages/Home";
 
-    <div className="App">
-      {currentPage === 1 ?  <Page1/>: <Page2/> }
-    </div>
+function App() {
+
+  return (
+    <>
+      <GloboStyles />
+      <Home />
+    </>
   );
 }
 
